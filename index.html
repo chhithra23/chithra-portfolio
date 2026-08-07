@@ -96,24 +96,24 @@
   <section class="slide slide-case" data-title="Case Study" data-index="03">
     <div class="slide-inner slide-inner-wide">
       <p class="eyebrow">Featured Work</p>
-      <h2 class="slide-heading">93% organic growth,<br class="br-desktop"> in six months.</h2>
+      <h2 class="slide-heading">276K impressions,<br class="br-desktop"> in six months.</h2>
       <p class="slide-body">
         A new SaaS site with almost no organic footprint — taken to page-one rankings and
         featured placements inside ChatGPT and Google AI Overviews.
       </p>
 
       <div class="metric-row">
-        <div class="metric"><span class="metric-num">56K</span><span class="metric-label">GSC impressions</span></div>
-        <div class="metric"><span class="metric-num">93%</span><span class="metric-label">growth rate</span></div>
+        <div class="metric"><span class="metric-num">276K</span><span class="metric-label">GSC impressions</span></div>
+        <div class="metric"><span class="metric-num">154</span><span class="metric-label">total clicks</span></div>
         <div class="metric"><span class="metric-num">400+</span><span class="metric-label">quality backlinks</span></div>
         <div class="metric"><span class="metric-num">80+</span><span class="metric-label">pages optimized</span></div>
       </div>
 
       <div class="case-shots">
-        <figure><img src="./gsc.png" alt="GSC impression growth" loading="lazy"><figcaption>Search Console — 6mo trajectory</figcaption></figure>
-        <figure><img src="./serp.png" alt="SERP rankings" loading="lazy"><figcaption>Page-one rankings</figcaption></figure>
-        <figure><img src="./ai-ranking.png" alt="ChatGPT search ranking" loading="lazy"><figcaption>Ranked inside ChatGPT search</figcaption></figure>
-        <figure><img src="./google-ai.png" alt="Google AI Overview" loading="lazy"><figcaption>Featured in Google AI Overviews</figcaption></figure>
+        <figure><button class="shot-btn" data-full="./gsc.png" data-caption="Search Console — 6mo trajectory"><img src="./gsc.png" alt="GSC impression growth" loading="lazy"></button><figcaption>Search Console — 6mo trajectory</figcaption></figure>
+        <figure><button class="shot-btn" data-full="./serp.png" data-caption="Page-one rankings"><img src="./serp.png" alt="SERP rankings" loading="lazy"></button><figcaption>Page-one rankings</figcaption></figure>
+        <figure><button class="shot-btn" data-full="./ai-ranking.png" data-caption="Ranked inside ChatGPT search"><img src="./ai-ranking.png" alt="ChatGPT search ranking" loading="lazy"></button><figcaption>Ranked inside ChatGPT search</figcaption></figure>
+        <figure><button class="shot-btn" data-full="./google-ai.png" data-caption="Featured in Google AI Overviews"><img src="./google-ai.png" alt="Google AI Overview" loading="lazy"></button><figcaption>Featured in Google AI Overviews</figcaption></figure>
       </div>
     </div>
   </section>
@@ -180,6 +180,17 @@
   <button class="bn-arrow bn-next" id="nextBtn" aria-label="Next slide">
     <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4.16669 10H15.8334M15.8334 10L10 4.16669M15.8334 10L10 15.8334" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
+</div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">
+    <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <figure class="lb-figure">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCaption"></figcaption>
+  </figure>
 </div>
 
 <script src="script.js"></script>
