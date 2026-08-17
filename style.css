@@ -358,7 +358,7 @@ body{
 /* =========================================================
    Skills
    ========================================================= */
-.chip-groups{ display: flex; flex-direction: column; gap: 30px; }
+.chip-groups{ display: flex; flex-direction: column; gap: 26px; }
 .chip-group-label{
   display: block;
   font-family: var(--font-mono);
@@ -366,18 +366,25 @@ body{
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--paper-faint);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
-.chips{ display: flex; flex-wrap: wrap; gap: 10px; }
+.chips{ display: flex; flex-wrap: wrap; gap: 9px; }
 .chip{
-  font-size: 0.92rem;
-  padding: 9px 18px;
+  font-size: 0.88rem;
+  padding: 8px 16px;
   border-radius: 100px;
   border: 1px solid var(--line);
   color: var(--paper-dim);
   transition: all 0.25s var(--ease);
 }
 .chip:hover{ border-color: var(--gold); color: var(--paper); }
+
+.slide-skills{
+  align-items: flex-start;
+  overflow-y: auto;
+  padding-top: calc(var(--nav-h) + 28px);
+}
+.slide-skills .slide-heading{ margin-bottom: 20px; }
 
 /* =========================================================
    Contact
