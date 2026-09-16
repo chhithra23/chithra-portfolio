@@ -385,6 +385,58 @@ body{
 }
 
 /* =========================================================
+   Writing / published content list
+   ========================================================= */
+.pub-list{ display: flex; flex-direction: column; }
+.pub-row{
+  display: grid;
+  grid-template-columns: 130px 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line-soft);
+  text-decoration: none;
+  color: inherit;
+}
+.pub-row:last-child{ border-bottom: 1px solid var(--line-soft); }
+.pub-domain{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--paper-faint);
+  letter-spacing: 0.02em;
+}
+.pub-title{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.12rem;
+  color: var(--paper);
+  transition: color 0.25s var(--ease);
+}
+.pub-row:hover .pub-title{ color: var(--gold); }
+.pub-target{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--paper-dim);
+  text-align: right;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pub-arrow{
+  color: var(--gold);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.25s var(--ease);
+}
+.pub-row:hover .pub-arrow{ opacity: 1; transform: translateX(0); }
+
+@media (max-width: 700px){
+  .pub-row{ grid-template-columns: 1fr; gap: 4px; padding: 18px 0; }
+  .pub-target{ text-align: left; white-space: normal; }
+}
+
+/* =========================================================
    Skills
    ========================================================= */
 .chip-groups{ display: flex; flex-direction: column; gap: 26px; }
