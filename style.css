@@ -1,5 +1,5 @@
 /* =========================================================
-   Chithra — bold editorial, dark, slide-based portfolio
+   Chithra: bold editorial, dark, slide-based portfolio
    ========================================================= */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -326,6 +326,18 @@ body{
 }
 @media (max-width: 700px){
   .metric-row{ grid-template-columns: repeat(2, 1fr); }
+}
+
+.stat-line{
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--paper-faint);
+  letter-spacing: 0.02em;
+  max-width: 680px;
+  margin: 4px 0 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line-soft);
 }
 
 .case-shots{
