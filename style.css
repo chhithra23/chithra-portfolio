@@ -402,21 +402,15 @@ body{
 .pub-list{ display: flex; flex-direction: column; }
 .pub-row{
   display: grid;
-  grid-template-columns: 130px 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 20px;
-  padding: 22px 0;
+  padding: 20px 0;
   border-top: 1px solid var(--line-soft);
   text-decoration: none;
   color: inherit;
 }
 .pub-row:last-child{ border-bottom: 1px solid var(--line-soft); }
-.pub-domain{
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--paper-faint);
-  letter-spacing: 0.02em;
-}
 .pub-title{
   font-family: var(--font-display);
   font-weight: 600;
